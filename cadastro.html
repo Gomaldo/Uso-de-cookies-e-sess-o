@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form action="/cadastro" method="POST">
+        <label>Código de barras:</label><input type="text" name="codigo" required>
+        <label>Descrição:</label><input type="text" name="descricao" required>
+        <label>Preço de custo:</label><input type="number" name="precoCusto" required>
+        <label>Preço de venda:</label><input type="number" name="precoVenda" required>
+        <label>Data de validade:</label><input type="date" name="validade" required>
+        <label>Qtd em estoque:</label><input type="number" name="estoque" required>
+        <label>Nome do fabricante:</label><input type="text" name="fabricante" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <a href="/" class="button">Voltar</a>
+</body>
+</html>
